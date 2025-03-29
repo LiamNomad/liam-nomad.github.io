@@ -3,5 +3,5 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "liamnomad.github.io",
+  base: '/', // Correct base for GitHub user page
 });
