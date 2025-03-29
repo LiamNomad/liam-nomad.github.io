@@ -1,51 +1,58 @@
-<header>
+# Personal Website – Data Engineer Portfolio
 
-<!--
-  <<< Author notes: Course header >>>
-  Include a 1280×640 image, course title in sentence case, and a concise description in emphasis.
-  In your repository settings: enable template repository, add your 1280×640 social image, auto delete head branches.
-  Add your open source license, GitHub uses MIT license.
--->
+Built with Vite + React + Tailwind CSS  
+Deployed manually to GitHub Pages (username.github.io)
 
-# GitHub Pages
+## 🚀 Getting Started
 
-_Create a site or blog from your GitHub repositories with GitHub Pages._
+```bash
+npm install
+npm run dev
+```
 
-</header>
+Visit: http://localhost:5173
 
-<!--
-  <<< Author notes: Step 3 >>>
-  Start this step by acknowledging the previous step.
-  Define terms and link to docs.github.com.
-  Historic note: previous version checked the homepage content was not empty.
--->
+## 🚀 Deploy to GitHub Pages
 
-## Step 3: Customize your homepage
+### SSH Setup (Recommended)
 
-_Nice work setting the theme! :sparkles:_
+1. Generate an SSH key (if not already done):
 
-You can customize your homepage by adding content to either an `index.md` file or the `README.md` file. GitHub Pages first looks for an `index.md` file. Your repository has an `index.md` file so we can update it to include your personalized content.
+```bash
+ssh-keygen -t ed25519 -C "liam.nomad34@gmail.com"
+```
 
-### :keyboard: Activity: Create your homepage
+2. Add your public SSH key to GitHub:  
+Go to **Settings → SSH and GPG Keys → New SSH Key**
 
-1. Browse to the `index.md` file in the `my-pages` branch.
-1. In the upper right corner, open the file editor.
-1. Type the content you want on your homepage. You can use Markdown formatting on this page.
-1. (optional) You can also modify `title:` or just ignore it for now. We'll discuss it in the next step.
-1. Commit your changes to the `my-pages` branch.
-1. Wait about 20 seconds then refresh this page (the one you're following instructions from). [GitHub Actions](https://docs.github.com/en/actions) will automatically update to the next step.
+3. Change your remote URL to SSH:
 
-<footer>
-
-<!--
-  <<< Author notes: Footer >>>
-  Add a link to get support, GitHub status page, code of conduct, license link.
--->
+```bash
+git remote set-url origin git@github.com:LiamNomad/LiamNomad.github.io.git
+```
 
 ---
 
-Get help: [Post in our discussion board](https://github.com/orgs/skills/discussions/categories/github-pages) &bull; [Review the GitHub status page](https://www.githubstatus.com/)
+### One-click deploy
 
-&copy; 2023 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+You can use the provided `deploy.sh` script to build and deploy:
 
-</footer>
+```bash
+chmod +x deploy.sh
+./deploy.sh
+```
+
+### Manual Steps (optional)
+
+If you prefer to do it manually:
+```bash
+npm run build
+cp -r dist/* ./
+rm -rf dist
+git add .
+git commit -m "Manual deploy"
+git push origin main
+```
+
+Then check your website live at:  
+➡️ https://liamnomad.github.io
