@@ -1,7 +1,8 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import mdPlugin from 'vite-plugin-markdown';
 
 export default defineConfig({
-  plugins: [react()],
-  base: '/', // Correct base for GitHub user page
+  plugins: [react(), mdPlugin({ mode: ['html', 'toc', 'attributes'] })],
+  base: '/',
 });
