@@ -15,7 +15,7 @@ git add .
 echo "✅ Committing..."
 git commit -m "Manual deploy of personal website"
 
-echo "⬆️ Pushing to GitHub..."
+echo "⬆️ Pushing to GitHub via SSH..."
 git push origin main
 
 echo "🎉 Deployment complete! Your website should be live at https://liamnomad.github.io"
