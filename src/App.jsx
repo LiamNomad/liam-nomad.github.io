@@ -42,7 +42,7 @@ export default function App() {
       <section>
         <h2 className="text-2xl font-semibold mb-4">Contact</h2>
         <p>📧 liam.nomad34@gmail.com</p>
-        <p>🔗 <a href="https://www.linkedin.com/in/yourprofile" className="text-blue-600">LinkedIn</a> | <a href="https://github.com/yourgithub" className="text-blue-600">GitHub</a></p>
+        <p>🔗 <a href="https://www.linkedin.com/in/liam-nomad" className="text-blue-600">LinkedIn</a> | <a href="https://github.com/liamnomad" className="text-blue-600">GitHub</a></p>
       </section>
     </main>
   );
