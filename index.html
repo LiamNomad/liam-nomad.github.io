@@ -1,44 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{{ site.title }}</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-</head>
-<body class="bg-white text-gray-900 p-6">
-
-  <main class="min-h-screen">
-    <section class="mb-12">
-      <h1 class="text-4xl font-bold mb-2">Hi, I'm {{ site.title }}</h1>
-      <p class="text-lg">{{ site.description }}</p>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">Projects</h2>
-      <div class="grid gap-6">
-        <div class="rounded-2xl shadow p-4 border">
-          <h3 class="text-xl font-bold">Real-Time Data Pipeline</h3>
-          <p class="mt-2">Built a streaming pipeline using Kafka, Spark Streaming, and Snowflake to ingest and process real-time events. Reduced reporting delay from hours to minutes.</p>
-        </div>
-        <div class="rounded-2xl shadow p-4 border">
-          <h3 class="text-xl font-bold">Cost Optimization on Snowflake</h3>
-          <p class="mt-2">Implemented a system to detect idle virtual warehouses and automatically suspend them, reducing compute costs by 40%.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mb-12">
-      <h2 class="text-2xl font-semibold mb-4">About Me</h2>
-      <p>I’m a data engineer with a passion for clean architecture and automation. Experienced with modern data stacks like Spark, Airflow, dbt, and Snowflake. Currently exploring real-time systems and data observability tools.</p>
-    </section>
-
-    <section>
-      <h2 class="text-2xl font-semibold mb-4">Contact</h2>
-      <p>📧 {{ site.email }}</p>
-      <p>🔗 <a href="{{ site.linkedin }}" class="text-blue-600">LinkedIn</a> | <a href="{{ site.github }}" class="text-blue-600">GitHub</a></p>
-    </section>
-  </main>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liam Nomad - Senior Data Engineer</title>
+  </head>
+  <body class="bg-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
